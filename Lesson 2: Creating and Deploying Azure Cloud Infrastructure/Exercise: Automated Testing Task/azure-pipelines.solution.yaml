@@ -5,8 +5,7 @@ stages:
 - stage: Build
   jobs:
   - job: Build
-    pool:
-      name: Hosted Ubuntu 1604
+    pool: bazukapool
     steps:
     - task: CmdLine@2
       displayName: Install Newman
